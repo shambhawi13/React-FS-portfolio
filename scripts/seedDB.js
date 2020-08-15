@@ -1,0 +1,47 @@
+const mongoose = require("mongoose");
+const db = require("../models");
+
+// This file empties the Projects collection and inserts the books below
+
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactportfolio");
+
+const projectSeed = [
+  {
+    title: "Hello World",
+    author: "Shambhawi",
+    body:
+      "Welcome to your first post! To create posts create a title and body. Don't forget to include your screen name!",
+    date: new Date(Date.now()),
+    category: "Front-end",
+    gitLink: "https://github.com/shambhawi13/React-based-portfolio"
+  },
+  {
+    title: "The Second Post",
+    author: "admin",
+    body:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    date: new Date(Date.now()),
+    category: "Front-end",
+    gitLink: "https://github.com/shambhawi13/React-based-portfolio"
+  },
+  {
+    title: "Another One",
+    author: "admin",
+    body:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    date: new Date(Date.now()),
+    category: "Front-end",
+    gitLink: "https://github.com/shambhawi13/React-based-portfolio"
+  }
+];
+
+db.Project.remove({})
+  .then(() => db.Project.collection.insertMany(projectSeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
