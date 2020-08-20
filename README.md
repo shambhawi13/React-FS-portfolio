@@ -5,9 +5,7 @@ While navigating through the page, you might find three tabs :
 ```
 This is how the application works.
 ```
- ![About Me](public/assets/desktop-view.gif) 
-
-```
+ ![About Me](./Assets/final.gif) 
 
 
 ## Technologies Used
