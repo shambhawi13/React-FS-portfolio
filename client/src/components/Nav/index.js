@@ -1,16 +1,29 @@
 import React from "react";
-import { useStoreContext } from "../../utils/GlobalState";
+import { Link } from "react-router-dom";
+import { Tabs, Tab, AppBar } from "@material-ui/core";
 
 function Nav() {
-  const [store] = useStoreContext();
+  const [value, setValue] = React.useState(0);
 
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="/">
-        Your personal CMS
-      </a>
-      {store.loading ? <a className="navbar-brand ml-auto">Loading...</a> : <></>}
-    </nav>
+    <div>
+      <AppBar position="static">
+        <Tabs value={value} onChange={handleChange} centered>
+          <Tab label="About" value={0} 
+                            component={Link} 
+                            to='/about' />
+          <Tab label="Dashboard" value={1} 
+                            component={Link} 
+                            to='/dashboard' />
+          <Tab label="Contact" value={2} 
+                            component={Link} 
+                            to='/contact' />
+        </Tabs>
+      </AppBar>
+    </div>
   );
 }
 
