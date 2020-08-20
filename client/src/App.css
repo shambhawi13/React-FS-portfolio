@@ -51,3 +51,32 @@
  .content{
     font-family: 'Open Sans', sans-serif;
  }
+
+ .page-footer{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: fit-content;
+    padding-top: 10px;
+    margin-top: 3em;
+    padding-bottom: 10px;
+    font-family: 'Kalam', cursive;
+    position: absolute;
+    width: 100%;
+ }
+
+ .footer-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.copyright{
+    padding-top: 0.5em;
+}
+
+.paddingLeft{
+    padding-left: 1em;
+}
+
+.fa-linkedin, .fa-facebook, .fa-github{
+    color: white
+}

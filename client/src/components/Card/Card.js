@@ -15,11 +15,12 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import CloudQueueIcon from '@material-ui/icons/CloudQueue';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import { useHistory } from 'react-router-dom';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 100 + '%',
+    height: 100 + '%'
   },
   media: {
     height: 0,
@@ -41,10 +42,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function ReviewCard({project}) {
-    let history = useHistory();
+    
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
-  let {title,subheader,image,shortDesc,longDesc1,longDesc2,longDesc3,gitLink,liveLink} = project;
+  let {title,subheader,image,shortDesc,longDesc1,longDesc2,longDesc3,gitLink,liveLink,longDesc4} = project;
 
   const handleExpandClick = () => {
     console.log(title,subheader);
@@ -116,7 +117,7 @@ export default function ReviewCard({project}) {
             {longDesc3}
           </Typography>
           <Typography>
-            
+            {longDesc4}
           </Typography>
         </CardContent>
       </Collapse>

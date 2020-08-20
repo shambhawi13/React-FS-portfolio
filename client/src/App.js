@@ -13,6 +13,7 @@ import ReactCmp from "./pages/React";
 import Mern from "./pages/Mern";
 import './App.css';
 import { CssBaseline } from '@material-ui/core';
+import Footer from './pages/Footer';
 // import { BrowserRouter as Router,Route, Switch, Redirect } from "react-router-dom";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
             <Route exact path="/dashboard/mern" component={Mern} />
             <Route component={NoMatch} />
           </Switch>
+          <Footer></Footer>
         </StoreProvider>
       </div>
     </Router>
