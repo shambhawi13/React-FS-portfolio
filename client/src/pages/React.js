@@ -10,12 +10,15 @@ import Quiz from '../Assets/quiz.jpg';
 import Fab from '@material-ui/core/Fab';
 import NavigationIcon from '@material-ui/icons/Navigation';
 import { useHistory } from 'react-router-dom';
+import Clicky from '../Assets/clicky.gif';
+import Emp from '../Assets/emp-directory.gif';
+import ReactImg from '../Assets/React.jpg'
 
 const project1 = {
-  title: 'Shoppinator',
-  subheader: 'One stop shop',
-  image: Shoppinator,
-  shortDesc: 'Shoppinator simplifies the search experience and creates a one-stop location for everything. Project is built with technologies like HTML, CSS, Bootstrap, Javascript, JQuery, Lodash, 3rd party APIs',
+  title: 'Clicky Game',
+  subheader: 'Memory game',
+  image: Clicky,
+  shortDesc: 'This is a memory game. Project is built with technologies like HTML, CSS, Bootstrap, Javascript, React',
   longDesc1: `- Instead of searching each item and tracking on personal notes, Shoppinator creates a
   platform to help users to just give the link to the image of his choice. eg: a
   workplace/livingspace and we will take care of processing the image and suggesting users
@@ -23,37 +26,32 @@ const project1 = {
   longDesc2: ` - Users need not track and search items one by one. `,
   longDesc3: `- It provides detail on both online purchase as well as nearby stores based on the
   user's choice.`,
-  gitLink: 'https://github.com/shambhawi13/Shoppinator',
-  liveLink: 'https://shambhawi13.github.io/Shoppinator/'
+  gitLink: 'https://github.com/shambhawi13/Clicky-Game',
+  liveLink: 'https://shambhawi13.github.io/Clicky-Game/'
 };
 
 const project2 = {
-  title: 'Weather Dashboard',
-  subheader: 'Forecast',
-  image: Weather,
-  shortDesc: 'As a user, I can visit this application to view wheather report of selected cities and save cities for future reference. Project is built with technologies like HTML, CSS, Bootstrap, Javascript, JQuery, Lodash, 3rd party APIs',
-  longDesc1: `I can get the following details: `,
-  longDesc2: `- Retrieve priviously saved weather details of the cities I have searched. It uses
-  localStorage behind the scene to keep record of cities. `,
-  longDesc3: `I can get forecast of next 5 days and multiple cities can be save for future reference.`,
-  longDesc4: `Used OpenWeather API to retrieve weather data.`,
-  gitLink: 'https://github.com/shambhawi13/Weather-Dashboard',
+  title: 'Employee Directory',
+  subheader: 'Employee management system',
+  image: Emp,
+  shortDesc: 'As a manager, use app to keep track of employee records. Project is built on React',
+  longDesc1: `An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.Given a table of random users, when the user loads the page, a table of employees should render. The user should be able to:
+
+  Sort the table by at least one category
+  Filter the users by at least one property. `,
+  gitLink: 'https://github.com/shambhawi13/Employee-directory',
   liveLink: 'https://shambhawi13.github.io/Shoppinator/'
 };
 
 const project3 = {
-  title: 'JS Quiz Game',
-  subheader: 'Fun game',
-  image: Quiz,
-  shortDesc: 'This application is written in pure Javascript, HTML, CSS and Bootstrap which is a five minutes timer based quiz application. You get points for each correct answer and reduces time for each wrong answer. ',
-  longDesc1: `10 questions with 4 option. Any one of the options are correct. You get 5 minutes to answer all question.`,
-  longDesc2: `One correct answers gets you 10 points. One wrong answer lowers your score by 5 points and deducts timer by 10sec. `,
-  longDesc3: `If you dont know the anwer of a question, you can goto next question by clicking
-  "Next" Button.`,
-  longDesc4: `If you want to review any answered question, you can click "Prev" button. After 5 min is over, you get to see total score. Enter the initials to save the
-      score.`,
-  gitLink: 'https://github.com/shambhawi13/quiz-game',
-  liveLink: 'https://shambhawi13.github.io/Shoppinator/'
+  title: 'React Portfolio',
+  subheader: 'This portfolio',
+  image: ReactImg,
+  shortDesc: 'Walk through this application. Project is built on React, Node, express, MongoDB, Mongoose',
+  longDesc1: `Walk through this application`,
+
+  gitLink: 'https://github.com/shambhawi13/React-based-portfolio',
+  liveLink: 'https://github.com/shambhawi13/React-based-portfolio'
 };
 
 const useStyles = makeStyles((theme) => ({

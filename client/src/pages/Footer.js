@@ -22,16 +22,19 @@ function Footer(){
                             vs ES6</a></p> */}
                 </Grid>
                 <Grid item sm={6} md={6}>
-                    <h5 className="white-text">Links</h5>
+                    <h4 className="white-text">Links</h4>
                     <ul>
                         <li><a className="grey-text text-lighten-3 icon"
                                 href="https://www.linkedin.com/in/shambhawi-kumari/"><i
-                                    className="fa fa-linkedin circle light-blue darken-4"></i></a></li>
+                                    className="fa fa-linkedin circle light-blue darken-4"></i></a> LinkedIn</li>
                         <li><a className="grey-text text-lighten-3 icon"
                                 href="https://www.facebook.com/shambhawi.kumari.1/"><i
-                                    className="fa fa-facebook circle blue darken-4"></i></a></li>
+                                    className="fa fa-facebook circle blue darken-4"></i></a> Facebook</li>
                         <li><a className="grey-text text-lighten-3 icon" href="https://github.com/shambhawi13/"><i
-                                    className="fa fa-github circle light-blue darken-4" aria-hidden="true"></i></a></li>
+                                    className="fa fa-github circle light-blue darken-4" aria-hidden="true"></i></a> Github</li>
+                        <li><a className="grey-text text-lighten-3 icon" href="https://drive.google.com/file/d/1DXcJTZdgNrdJXd8yCEbqwDSRsmDeu2kv/view?usp=sharing"><i class="fa fa-file-text" aria-hidden="true"></i></a>Resume</li>
+
+
                     </ul>
                 </Grid>
             </Grid>

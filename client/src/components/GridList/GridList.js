@@ -111,7 +111,8 @@ export default function TitlebarGridList() {
         <div className={classes.root}>
             <GridList cellHeight={180} className={classes.gridList}>
                 <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
-                    <ListSubheader component="div">Click on info icon to see projects</ListSubheader>
+                    <ListSubheader component="div">Click on <IconButton className={classes.darkicon}>
+                                    <InfoIcon /></IconButton> below to see projects in detail</ListSubheader>
                 </GridListTile>
                 {tileData.map((tile) => (
                     <GridListTile key={tile.img}>

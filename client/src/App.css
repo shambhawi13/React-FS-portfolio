@@ -77,6 +77,7 @@
     padding-left: 1em;
 }
 
-.fa-linkedin, .fa-facebook, .fa-github{
-    color: white
+.fa-linkedin, .fa-facebook, .fa-github, .fa-file-text{
+    color: white;
+    padding-right: 10px;;
 }
