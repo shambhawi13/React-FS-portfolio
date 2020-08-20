@@ -21,7 +21,7 @@ This is how the application works.
 
 ## Deployed Link
 
-[Live Hosted on](https://portfolio-shambhawi.herokuapp.com/)
+[Live Hosted on](https://react-portfolio-shambhawi.herokuapp.com/)
 
 ## Authors
 
@@ -33,7 +33,7 @@ This is how the application works.
 ## Review URL
 
 - [GitHub](https://github.com/shambhawi13/React-based-portfolio)
-- [Live](https://portfolio-shambhawi.herokuapp.com/)
+- [Live](https://react-portfolio-shambhawi.herokuapp.com/)
 
 
 
