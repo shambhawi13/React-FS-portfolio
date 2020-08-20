@@ -12,13 +12,13 @@ const About = () => {
       <div>
         <img style={{height:30 +'em',width:100 + '%'}} className="responsive-img" src={parallex1}></img>
       </div>
-      <Container>
+      <Container >
       <h2 className="header">Author</h2>
             <Grid container className="wrap">
                 <Grid item xs={4} className="image col l2 m3 s5">
                     <img className="img-fluid shadow float-left" src={profile} alt="Profile picture"/>
                 </Grid>
-                <Grid item xs={8} className="content col l10 m9 s7" >
+                <Grid item xs={8} className="content col l10 m9 s7" style={{paddingLeft: 13 + 'em'}}>
                     <p className="grey-text text-darken-3 lighten-3 about-para" >Hi..!!! I am Shambhawi Kumari. I am a web
                         developer and this
                         is the
