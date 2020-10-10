@@ -4,9 +4,10 @@ const apiRoutes = require("./api");
 
 // API Routes
 router.use("/api", apiRoutes);
+console.log("In the routes / index file");
 
-// If no API routes are hit, send the React app
-router.use(function(req, res) {
+// Client Side Routes all go to our React APP
+router.get("*", function (req, res) {
   res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 

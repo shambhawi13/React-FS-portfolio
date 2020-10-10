@@ -1,5 +1,4 @@
 const nodemailer = require('nodemailer');
-
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -43,10 +42,12 @@ function sendAckMail (detailObj){
 
 
 function sendMail(detailObj){
+  console.log("inside config sendMail ",detailObj);
   if(detailObj){
     transporter.sendMail(mailOptions(detailObj), function (error, info) {
       if (error) {
         console.log(error);
+        return error;
       } else {
         console.log('Email sent: ' + info.response);
       }
@@ -56,10 +57,12 @@ function sendMail(detailObj){
     transporter.sendMail(sendAckMail(detailObj), function (error, info) {
       if (error) {
         console.log(error);
+        return error;
       } else {
         console.log('Acknowledgement Email sent: ' + info.response);
       }
     });
+    
   }
 }
 
