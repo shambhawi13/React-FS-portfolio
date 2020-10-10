@@ -32,7 +32,7 @@ function Footer(){
                                     className="fa fa-facebook circle blue darken-4"></i></a> Facebook</li>
                         <li><a className="grey-text text-lighten-3 icon" href="https://github.com/shambhawi13/"><i
                                     className="fa fa-github circle light-blue darken-4" aria-hidden="true"></i></a> Github</li>
-                        <li><a className="grey-text text-lighten-3 icon" href="https://drive.google.com/file/d/1DXcJTZdgNrdJXd8yCEbqwDSRsmDeu2kv/view?usp=sharing"><i class="fa fa-file-text" aria-hidden="true"></i></a>Resume</li>
+                        <li><a className="grey-text text-lighten-3 icon" href="https://drive.google.com/file/d/1DXcJTZdgNrdJXd8yCEbqwDSRsmDeu2kv/view?usp=sharing"><i className="fa fa-file-text" aria-hidden="true"></i></a>Resume</li>
 
 
                     </ul>

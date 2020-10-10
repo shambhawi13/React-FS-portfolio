@@ -1,0 +1,9 @@
+.contact-container{
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.fName, .lName{
+    width: 48%;
+}
