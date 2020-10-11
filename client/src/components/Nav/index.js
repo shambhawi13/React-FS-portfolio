@@ -15,7 +15,7 @@ function Nav() {
           <Tab label="About" value={0} 
                             component={Link} 
                             to='/about' />
-          <Tab label="Dashboard" value={1} 
+          <Tab label="Project Dashboard" value={1} 
                             component={Link} 
                             to='/dashboard' />
           <Tab label="Contact" value={2} 

@@ -24,6 +24,12 @@ const useStyles = makeStyles((theme) => ({
     right: theme.spacing(2),
     zIndex: 4
   },
+  role: {
+    position: 'absolute',
+    top: theme.spacing(8),
+    left: theme.spacing(2),
+    color: 'white',
+  }
 }));
 
 const About = () => {
@@ -63,6 +69,10 @@ const About = () => {
             Download Resume
         </Fab>
       </a>
+      <p className={classes.role}>
+        <h2 style={{fontFamily: 'cursive'}}>Shambhawi Kumari</h2>
+         <h3 style={{fontVariant: 'small-caps'}}> Full stack Engineer, passion for User Interface <br/> design and development </h3>
+      </p>
       <Paper>
         <Container style={{backgroundColor: "white"}}>
               <Grid container className="wrap" style={{backgroundColor: "white"}}>
@@ -73,7 +83,7 @@ const About = () => {
                       <img className="img-fluid shadow float-left" src={profile} alt="Profile picture"/>
                   </Grid>
                   <Grid item xs={12} md={9} className="content">
-                      <p className="grey-text text-darken-3 lighten-3 about-para" >Hi..!!! I am Shambhawi Kumari. I am a web
+                      <p className="grey-text text-darken-3 lighten-3 about-para" >Hi..!!! I am a web
                           developer and this
                           is the
                           little corner on the internet that you can explore to know more about me. I am from India and
