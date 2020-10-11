@@ -4,15 +4,6 @@
     margin-right: 10%;
 }
 
-.fName, .lName{
-    width: 48%;
-}
-
-#pad{
-    padding: 20px;
-}
-
-.email-highlight{
-    font-style: italic;
+.link-color{
     color: teal;
 }

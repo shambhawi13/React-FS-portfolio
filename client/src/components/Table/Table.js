@@ -7,6 +7,7 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import './style.css';
 
 const useStyles = makeStyles({
   table: {
@@ -25,21 +26,19 @@ const rows = [
   createData('Email', "shambhawi.kumari1393@gmail.com"),
   createData('LinkedIn', "https://www.linkedin.com/in/shambhawi-kumari/"),
   createData('Github', "https://github.com/shambhawi13/"),
-  createData('Resume', "https://drive.google.com/file/d/1DXcJTZdgNrdJXd8yCEbqwDSRsmDeu2kv/view?usp=sharing"),
-  createData('Blogs', "https://medium.com/@shambhawi.kumari1393/typescript-vs-javascript-dc1ed31bd95a?source=friends_link&sk=148bd5a4d4848b9e5c99c28c2237aad0"),
-  createData('Facebook', "https://www.facebook.com/shambhawi.kumari.1/"),
+  createData('Blogs', "https://medium.com/@shambhawi.kumari1393/"),
 ];
 
 export default function SimpleTable() {
   const classes = useStyles();
 
   return (
+    <div className="contact-container">
     <TableContainer component={Paper}>
       <Table className={classes.table} aria-label="simple table">
         <TableHead className={classes.header}>
           <TableRow>
-            <TableCell>Contact Info</TableCell>
-            <TableCell align="right">Detail</TableCell>
+            <TableCell colSpan={2}>Other Contact Informations</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -48,11 +47,13 @@ export default function SimpleTable() {
               <TableCell component="th" scope="row">
                 {row.name}
               </TableCell>
-              <TableCell align="right"><a href={row.detail}>{row.detail}</a></TableCell>
+              <TableCell align="right"><a href={row.detail} className="link-color">{row.detail}</a></TableCell>
             </TableRow>
           ))}
+          
         </TableBody>
       </Table>
     </TableContainer>
+    </div>
   );
 }

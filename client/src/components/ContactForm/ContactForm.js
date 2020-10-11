@@ -7,12 +7,13 @@ import Button from '@material-ui/core/Button';
 import Icon from '@material-ui/core/Icon';
 import "./style.css";
 import API from "../../utils/API";
+import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles((theme) => ({
     root: {
       '& .MuiTextField-root': {
         margin: theme.spacing(1),
-        width: '200',
+        width: '200'
       },
     },
   }));
@@ -41,11 +42,12 @@ function ContactForm(){
 
     return (
         <div className="contact-container">
-            <form className={classes.root} autoComplete="off" onSubmit={handleSendEmail}>
-                <InputLabel><AccountCircle></AccountCircle>Connecting to &nbsp;
-                <a href="#"> shambhawi.kumari1393@gmail.com</a>
+            <Paper elevation={3} >
+            <form className={classes.root} id="pad" autoComplete="off" onSubmit={handleSendEmail}>
+                <InputLabel><AccountCircle></AccountCircle>Connect to &nbsp;
+                <span className="email-highlight"> shambhawi.kumari1393@gmail.com</span>
                 </InputLabel>
-
+                <hr></hr>
                 <TextField required inputRef={fNameRef} id="fName" className="fName" label="First Name" placeholder="First Name" />
                 <TextField required inputRef={lNameRef} id="lName" className="lName" label="Last Name" placeholder="Last Name" />
                 <TextField fullWidth inputRef={mobileRef} required id="mobile" label="Mobile Number" placeholder="+1(000)0000" />
@@ -71,6 +73,7 @@ function ContactForm(){
                     Send Mail
                 </Button>
             </form>
+            </Paper>
         </div>
     )
 }

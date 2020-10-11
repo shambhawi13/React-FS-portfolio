@@ -5,8 +5,8 @@ import ContactForm from '../components/ContactForm/ContactForm';
 function Contact() {
   return (
     <div>
-      <SimpleTable></SimpleTable>
       <ContactForm></ContactForm>
+      <SimpleTable></SimpleTable>    
     </div>
   );
 }
