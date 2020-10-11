@@ -30,15 +30,22 @@
     transition: all .3s .3s;
 }
 
-.image{
+.header{
+    font-family: cursive;
+    color: darkslateblue;
+    text-align: center;
+    font-style: italic;
+}
+
+/* .image{
     position: absolute;
     left: -2em !important;
-}
+} */
 
 .about-para{
     font-family: 'Open Sans', sans-serif;
-    /* position: absolute;
-    right: 0; */
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .shadow {

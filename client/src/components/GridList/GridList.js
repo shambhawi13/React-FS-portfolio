@@ -109,8 +109,10 @@ export default function TitlebarGridList() {
 
     return (
         <div className={classes.root}>
+            
             <GridList cellHeight={180} className={classes.gridList}>
                 <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
+                    <h1>Projects</h1>
                     <ListSubheader component="div">Click on <IconButton className={classes.darkicon}>
                                     <InfoIcon /></IconButton> below to see projects in detail</ListSubheader>
                 </GridListTile>
