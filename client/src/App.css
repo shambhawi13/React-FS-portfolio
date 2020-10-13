@@ -77,7 +77,9 @@
     .work-container .work-info{
         margin-left: 200px !important;
     } */
-
+    .makeStyles-paper-6{
+        height: inherit;
+    }
     .work-container {
         display: flex;
         flex-direction: column;
