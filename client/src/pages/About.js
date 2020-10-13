@@ -98,8 +98,8 @@ const About = () => {
                       <p className="grey-text text-darken-3 lighten-3 about-para" >Hi..!!! I am a web
                           developer and this
                           is the
-                          little corner on the internet that you can explore to know more about me. I am from India and
-                          currently living in Santa Clara , California. I enjoy building everything from small
+                          little corner on the internet that you can explore to know more about me. I am native Indian and
+                          work at Bay Area , California. I enjoy building everything from small
                           business sites to rich interactive web apps. I love to design and develop user friendly
                           interactive application. I have 5+ years of experience in the web development industry and I
                           look

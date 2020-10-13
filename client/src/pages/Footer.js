@@ -10,7 +10,7 @@ function Footer(){
           justify="center">
                <Grid item sm={6} md={6} className="align-center">
                     <h5 className="white-text">Address</h5>
-                    <p className="grey-text text-lighten-4">Santa Clara, California-95054.</p>
+                    <p className="grey-text text-lighten-4">600 Park View Dr. <br/> Santa Clara, California-95054.</p>
                     <br/>
                     {/* <h5>Blogs</h5> */}
                     {/* <p className="medium-blog"><a
