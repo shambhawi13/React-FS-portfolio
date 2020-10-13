@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CanvasJSReact from '../../utils/canvasjs.react';
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
-var CanvasJS = CanvasJSReact.CanvasJS;
+//var CanvasJS = CanvasJSReact.CanvasJS;
  
 class BarChart extends Component {
 	render() {

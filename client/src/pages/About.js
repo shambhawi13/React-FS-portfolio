@@ -10,6 +10,9 @@ import Fab from '@material-ui/core/Fab';
 import GetAppIcon from '@material-ui/icons/GetApp';
 import { makeStyles } from '@material-ui/core/styles';
 import resume from '../Assets/resume.pdf';
+import shoppr from '../Assets/shoppr.jpg';
+import spoiler from '../Assets/spoiler-alert.png';
+import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 
 const useStyles = makeStyles((theme) => ({
   margin: {
@@ -38,23 +41,23 @@ const About = () => {
 
   useEffect(() => {
     function handleScroll() {
-      setOffset(window.pageYOffset)
+      setOffset(window.pageYOffset);
     }
     window.addEventListener("scroll", handleScroll)
-    return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
+    // return () => {
+    //   window.removeEventListener("scroll", handleScroll)
+    // }
   }, [])
 
   return (
     <div className={classes.root}>
       <div>
-      {/* {{height:30 +'em',width:100 + '%'}}  */}
         <img style= {{
           height:30 +'em',width:100 + '%',
-            transform: `translateY(${offset * 0.5}px)`,
+            transform: `translateY(${offset * 0.3}px)`,
           }}
         className=" parallex"
+        alt="parallex"
          src={parallex1}></img>
       </div>
       <a href={resume} download>
@@ -63,16 +66,16 @@ const About = () => {
             size="small"
             color="secondary"
             aria-label="add"
-            className={classes.margin,classes.fab}
+            className={classes.margin, classes.fab}
           >
             <GetAppIcon className={classes.extendedIcon}></GetAppIcon>
             Download Resume
         </Fab>
       </a>
-      <p className={classes.role}>
+      <div className={classes.role}>
         <h2 style={{fontFamily: 'cursive'}}>Shambhawi Kumari</h2>
          <h3 style={{fontVariant: 'small-caps'}}> Full stack Engineer, passion for User Interface <br/> design and development </h3>
-      </p>
+      </div>
       <Paper>
         <Container style={{backgroundColor: "white"}}>
               <Grid container className="wrap" style={{backgroundColor: "white"}}>
@@ -101,6 +104,43 @@ const About = () => {
               </Grid>
         </Container>
       </Paper>
+      <div>
+        <Container>
+          <h1 className="align-center font"> Selected Work</h1>
+          <ul className="work-list">
+            <li className="work-container">
+              <div className="work-thumbnail">
+                <a href="#" data-work="work3">
+                  <img src={shoppr} alt="" className="thumbnail-image"/>
+                </a>
+              </div>
+              <div className="work-info green">
+                    <h2 className="work-title">Shoppr</h2>
+                    <p className="work-description">This React/Node.js app utilizes the the AI image recognition capabilities of the GoogleVision API and makes shopping a fun, easy and social experience<span className="triangle"></span></p>
+                    <a href="#" className="read-more" data-work="work3"><AddCircleOutlineIcon/></a>
+              </div>
+
+            </li>
+
+            <li className="work-container">
+              <div className="work-thumbnail">
+                <a href="#" data-work="work3">
+                  <img src={spoiler} alt="" className="thumbnail-image"/>
+                </a>
+              </div>
+              <div className="work-info coral">
+                    <h2 className="work-title">Spoiler Alert</h2>
+                    <p className="work-description">Spoiler Alert! is a food inventory and status tracking application. Users can sign-in to view items, add items, update item quantities, and remove items from their refrigerator. 
+                    When items near their expiration date, Spoiler Alert! will send an alert to the user’s email informing him/her of the item that is near expiration.<span className="triangle"></span></p>
+                    <a href="#" className="read-more" data-work="work3"><AddCircleOutlineIcon/></a>
+              </div>
+
+            </li>
+
+          </ul>
+        </Container>
+
+      </div>
     </div>
   );
 };

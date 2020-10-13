@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import SimpleTable from '../components/Table/Table';
 import ContactForm from '../components/ContactForm/ContactForm';
 

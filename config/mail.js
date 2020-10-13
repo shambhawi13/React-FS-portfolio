@@ -1,8 +1,8 @@
 const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  service: 'outlook',
   auth: {
-    user: 'portfolio.shambhawi@gmail.com',
+    user: process.env.SOURCE_EMAIL,
     pass: process.env.EMAIL_PASS 
   }
 });
@@ -14,7 +14,7 @@ function mailOptions (detailObj){
   phone number: ${detailObj.phone?detailObj.phone:"No phone number provided"}
   message: ${detailObj.subject}`;
   let mailOptions = {
-        from: 'portfolio.shambhawi@gmail.com',
+        from: process.env.SOURCE_EMAIL,
         to: `${process.env.MAIL_TO}`,
         subject: subject,
         text: bodyOfMail
@@ -32,7 +32,7 @@ function sendAckMail (detailObj){
   
   ** This is an auto generated mail. Do not reply to this mail id.`;
   let mailOptions = {
-        from: 'portfolio.shambhawi@gmail.com',
+        from: process.env.SOURCE_EMAIL,
         to: `${detailObj.email}`,
         subject: subject,
         text: bodyOfMail
