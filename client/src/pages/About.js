@@ -4,7 +4,7 @@ import profile from "../Assets/profile.jpg"
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import "../App.css";
-// import Paper from '@material-ui/core/Paper';
+import Paper from '@material-ui/core/Paper';
 import BarChart from '../components/BarChart/BarChart';
 import Fab from '@material-ui/core/Fab';
 import GetAppIcon from '@material-ui/icons/GetApp';
@@ -15,6 +15,16 @@ import spoiler from '../Assets/spoiler-alert.png';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+    backgroundColor: "bisque",
+    height: '350px'
+  },
   margin: {
     margin: theme.spacing(1),
   },
@@ -136,6 +146,30 @@ const About = () => {
             </li>
 
           </ul>
+        </Container>
+
+        <Container >
+          <h1 className="align-center font"> Blogs Published</h1>
+          <Grid container spacing={3}>
+            <Grid item xs={12} sm={4}>
+              <Paper className={classes.paper}>
+              <blockquote className="embedly-card"><h4><a href="https://medium.com/@shambhawi.kumari1393/global-state-management-react-hooks-compared-to-redux-818a4240f45e">Global State Management | React Hooks compared to Redux</a></h4><p>There is lot of buzz around state management, when application grows how do we maintain one stop store which tracks value of state at a given point of time. There are many famous libraries like Redux, MobX, Flux, Apollo client+GraphQL and many more in the list. The widely used being Redux.</p></blockquote>
+              <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+              </Paper>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <Paper className={classes.paper}>
+              <blockquote className="embedly-card"><h4><a href="https://medium.com/@shambhawi.kumari1393/typescript-vs-javascript-dc1ed31bd95a">TypeScript vs JavaScript</a></h4><p>It is an object-based language, with JIT (Just-in-Time) compiler and dynamic typing. With ES6, JavaScript has moved a step towards Object-oriented concept but not completely as it still lacks true...</p></blockquote>
+              <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+              </Paper>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <Paper className={classes.paper}>
+              <blockquote className="embedly-card"><h4><a href="https://medium.com/@shambhawi.kumari1393/lodash-vs-es6-why-lodash-still-preferred-fbfa9445fb30">Lodash vs ES6. Why Lodash still preferred.</a></h4><p>With various ES6 functions, Lodash is often debatable if we still need them. Matter of fact everything boils down to functionalities, if you can use Array.prototype.filter, .map and .reduce.to achieve the desired functionality. One can say why need Lodash when you can use in-built functions of javascript. But the fact is about convenience.</p></blockquote>
+              <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+              </Paper>
+            </Grid>
+          </Grid>
         </Container>
 
       </div>
