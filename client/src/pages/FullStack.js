@@ -4,51 +4,48 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
+import SpoilerAlert from '../Assets/spoiler-alert.png';
 import Fab from '@material-ui/core/Fab';
 import NavigationIcon from '@material-ui/icons/Navigation';
 import { useHistory } from 'react-router-dom';
-import Clicky from '../Assets/clicky.gif';
-import Emp from '../Assets/emp-directory.gif';
-import ReactImg from '../Assets/react.png'
+import shoppr from '../Assets/shoppr.jpg';
+import ebook from '../Assets/e-book.png';
 
 const project1 = {
-  title: 'Clicky Game',
-  subheader: 'Memory game',
-  image: Clicky,
-  shortDesc: 'This is a memory game. Project is built with technologies like HTML, CSS, Bootstrap, Javascript, React',
-  longDesc1: `- Instead of searching each item and tracking on personal notes, Shoppinator creates a
-  platform to help users to just give the link to the image of his choice. eg: a
-  workplace/livingspace and we will take care of processing the image and suggesting users
-  of different items that he would like to buy. `,
+  title: 'Shoppr',
+  subheader: 'AI based social shopping',
+  image: shoppr,
+  shortDesc: 'This React/Node.js app utilizes the the AI based image recognition capabilities of the GoogleVision API and makes shopping a fun, easy and social',
+  longDesc1: `- With Shoppr you can connect with your friends and find out if they buy similar items to what you are searching for, so if they have already purchased that item, we can get their opinion about it. `,
   longDesc2: ` - Users need not track and search items one by one. `,
   longDesc3: `- It provides detail on both online purchase as well as nearby stores based on the
   user's choice.`,
-  gitLink: 'https://github.com/shambhawi13/Clicky-Game',
-  liveLink: 'https://shambhawi13.github.io/Clicky-Game/'
+  gitLink: 'https://github.com/shambhawi13/Shoppr',
+  liveLink: 'https://shoppr-ai.herokuapp.com/'
 };
 
 const project2 = {
-  title: 'Employee Directory',
-  subheader: 'Employee management system',
-  image: Emp,
-  shortDesc: 'As a manager, use app to keep track of employee records. Project is built on React',
-  longDesc1: `An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.Given a table of random users, when the user loads the page, a table of employees should render. The user should be able to:
-
-  Sort the table by at least one category
-  Filter the users by at least one property. `,
-  gitLink: 'https://github.com/shambhawi13/Employee-directory',
+  title: 'Spoler Alert',
+  subheader: 'Food inventory app',
+  image: SpoilerAlert,
+  shortDesc: 'Spoiler Alert! is a food inventory and status tracking application. Project is built with technologies like HTML, CSS, Bootstrap, Javascript, JQuery, Lodash, MySQL,Sequelize, node, express',
+  longDesc1: `Users can sign-in to view
+  items, add items, update item quantities, and remove items from their refrigerator. When
+  items near their expiration date, Spoiler Alert! will send an alert to the user’s email
+  informing him/her of the item that is near expiration. `,
+  gitLink: 'https://github.com/shambhawi13/Refritrack',
   liveLink: 'https://shambhawi13.github.io/Shoppinator/'
 };
 
 const project3 = {
-  title: 'React Portfolio',
-  subheader: 'This portfolio',
-  image: ReactImg,
-  shortDesc: 'Walk through this application. Project is built on React, Node, express, MongoDB, Mongoose',
-  longDesc1: `Walk through this application`,
-
-  gitLink: 'https://github.com/shambhawi13/React-based-portfolio',
-  liveLink: 'https://github.com/shambhawi13/React-based-portfolio'
+  title: 'E-Book',
+  subheader: 'Google Book References',
+  image: ebook,
+  shortDesc: 'If you are looking for e-books, we provide you with one stop book store. This application utilizes Google Book API to serve you reading desire. You can save and delete books in your library.',
+  longDesc1: `Full Stack MERN application to search for books from the Google Book API, and store them in a Mongo database.`,
+  longDesc2: `This application is built using react, mongodb, mongoose, node.`,
+  gitLink: 'https://github.com/shambhawi13/Google-book-search',
+  liveLink: 'https://books-google-search.herokuapp.com/'
 };
 
 const useStyles = makeStyles((theme) => ({
@@ -68,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function ReactCmp() {
+function FullStack() {
   const classes = useStyles();
   let history = useHistory();
 
@@ -122,4 +119,4 @@ function ReactCmp() {
   );
 }
 
-export default ReactCmp;
+export default FullStack;

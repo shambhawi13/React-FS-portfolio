@@ -79,7 +79,7 @@ export default function ReviewCard({project}) {
       <CardMedia
         className={classes.media}
         image={image}
-        title="Paella dish"
+        title=""
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">

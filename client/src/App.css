@@ -70,6 +70,10 @@
     height: 100%;
 }
 
+.list-none{
+    list-style-type: none;
+}
+
 @media only screen and (max-width: 540px){
     /* .work-container .work-thumbnail {
         width: 200px;

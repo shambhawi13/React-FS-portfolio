@@ -8,7 +8,7 @@ function Footer(){
         <Grid container
           direction="row"
           justify="center">
-               <Grid item sm={6} md={6} className="paddingLeft">
+               <Grid item sm={6} md={6} className="align-center">
                     <h5 className="white-text">Address</h5>
                     <p className="grey-text text-lighten-4">Santa Clara, California-95054.</p>
                     <br/>
@@ -20,9 +20,9 @@ function Footer(){
                             href="https://medium.com/@shambhawi.kumari1393/lodash-vs-es6-why-lodash-still-preferred-fbfa9445fb30?source=friends_link&sk=d4a4c36a23556b68e92a469581cb2bad">Lodash
                             vs ES6</a></p> */}
                 </Grid>
-                <Grid item sm={6} md={6}>
+                <Grid item sm={6} md={6} className="align-center">
                     <h4 className="white-text">Links</h4>
-                    <ul>
+                    <ul className="list-none">
                         <li><a className="grey-text text-lighten-3 icon"
                                 href="https://www.linkedin.com/in/shambhawi-kumari/"><i
                                     className="fa fa-linkedin circle light-blue darken-4"></i></a> LinkedIn</li>

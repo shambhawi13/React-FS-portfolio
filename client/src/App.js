@@ -10,7 +10,7 @@ import FrontEnd from "./pages/FrontEnd";
 import Node from "./pages/Node";
 import Angular from "./pages/Angular";
 import ReactCmp from "./pages/React";
-import Mern from "./pages/Mern";
+import FullStack from "./pages/FullStack";
 import './App.css';
 import { CssBaseline } from '@material-ui/core';
 import Footer from './pages/Footer';
@@ -32,7 +32,7 @@ function App() {
             <Route exact path="/dashboard/node" component={Node} />
             <Route exact path="/dashboard/react" component={ReactCmp} />
             <Route exact path="/dashboard/angular" component={Angular} />
-            <Route exact path="/dashboard/mern" component={Mern} />
+            <Route exact path="/dashboard/fs" component={FullStack} />
             <Route component={NoMatch} />
           </Switch>
           <Footer></Footer>

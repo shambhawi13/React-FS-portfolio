@@ -11,7 +11,7 @@ import fe from '../../Assets/Front-End-Development.jpg';
 import node from '../../Assets/NodeJS.png';
 import angular from '../../Assets/angular.png';
 import reactProject from '../../Assets/react.png';
-import mern from '../../Assets/mern.jpg';
+import fs from '../../Assets/full-stack.jpg';
 import { useHistory } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
@@ -22,12 +22,15 @@ const useStyles = makeStyles((theme) => ({
         overflow: 'hidden',
     },
     gridList: {
-        width: 60 + '%',
+        width: 80 + '%',
         height: 80 + '%'
     },
     icon: {
         color: 'rgba(255, 255, 255, 0.54)',
     },
+    cardHeight: {
+        height: 20 + 'em !important'
+    }
 }));
 
 /**
@@ -50,29 +53,29 @@ const useStyles = makeStyles((theme) => ({
 
 const tileData = [
     {
+        img: fs,
+        title: 'Full Stack Projects',
+        techStack: 'React, JS, Node, Express, SQL, MongoDB',
+    },
+    {
         img: fe,
         title: 'Front-end Vanilla JS/JQuery Projects',
-        author: 'author',
+        techStack: 'JS, HTML, CSS and its framework',
     },
     {
         img: node,
         title: 'Node Projects',
-        author: 'author',
+        techStack: 'Node, Express, SQL, MongoDB',
     },
     {
         img: reactProject,
         title: 'React Projects',
-        author: 'author',
+        techStack: 'React, CSS framework',
     },
     {
         img: angular,
         title: 'Angular Projects',
-        author: 'author',
-    },
-    {
-        img: mern,
-        title: 'MERN Projects',
-        author: 'author',
+        techStack: 'Angular, CSS framework',
     }
 ];
 
@@ -81,7 +84,7 @@ export default function TitlebarGridList() {
     let history = useHistory();
 
     function handleClickInfo(title) {
-        console.log(title + ' clicked !!!!');
+        //console.log(title + ' clicked !!!!');
         switch (title) {
             case 'Front-end Vanilla JS/JQuery Projects':
                 history.push('/dashboard/front-end');
@@ -95,8 +98,8 @@ export default function TitlebarGridList() {
             case 'Angular Projects':
                 history.push('/dashboard/angular');
                 break;
-            case 'MERN Projects':
-                history.push('/dashboard/mern');
+            case 'Full Stack Projects':
+                history.push('/dashboard/fs');
                 break;
             case 'Node Projects':
                 history.push('/dashboard/node');
@@ -116,11 +119,11 @@ export default function TitlebarGridList() {
                                     <InfoIcon /></IconButton> below to see projects in detail</ListSubheader>
                 </GridListTile>
                 {tileData.map((tile) => (
-                    <GridListTile key={tile.img}>
+                    <GridListTile key={tile.img} className={classes.cardHeight}>
                         <img src={tile.img} alt={tile.title} />
                         <GridListTileBar
                             title={tile.title}
-                            subtitle={<span>by: {tile.author}</span>}
+                            subtitle={<span>Tech Stack: {tile.techStack}</span>}
                             actionIcon={
                                 <IconButton aria-label={`info about ${tile.title}`} className={classes.icon} onClick={() => handleClickInfo(tile.title)}>
                                     <InfoIcon />
