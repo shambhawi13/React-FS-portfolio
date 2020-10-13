@@ -6,7 +6,6 @@ function Footer(){
     return (
         <div className="page-footer blue-grey darken-2">
         <Grid container
-          alignItems="center"
           direction="row"
           justify="center">
                <Grid item sm={6} md={6} className="paddingLeft">
@@ -38,7 +37,7 @@ function Footer(){
                     </ul>
                 </Grid>
             </Grid>
-            <Grid item sm={6} md={6} className="paddingLeft">
+            <Grid item sm={6} md={6}>
             <div className="footer-copyright">
                 <div className="container">
                     © 2020 Copyright

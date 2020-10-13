@@ -94,6 +94,9 @@
         height: 200px !important;
         top: -7px;
     }
+    .paddingLeft{
+        padding-left: 1em !important;
+    }
 }
 
 @media only screen and (min-width: 540px) and (max-width: 768px){
@@ -118,6 +121,9 @@
     }
     .coral{
         height: 225px !important;
+    }
+    .paddingLeft{
+        padding-left: 1em !important;
     }
 }
 
@@ -232,12 +238,12 @@
     flex-direction: row;
 }
 
-.copyright{
-    padding-top: 0.5em;
+.footer-copyright{
+    text-align: center;
 }
 
 .paddingLeft{
-    padding-left: 1em;
+    padding-left: 3em;
 }
 
 .fa-linkedin, .fa-facebook, .fa-github, .fa-file-text{
