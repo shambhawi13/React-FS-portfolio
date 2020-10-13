@@ -10,7 +10,7 @@ import InfoIcon from '@material-ui/icons/Info';
 import fe from '../../Assets/Front-End-Development.jpg';
 import node from '../../Assets/NodeJS.png';
 import angular from '../../Assets/angular.png';
-import reactProject from '../../Assets/React.jpg';
+import reactProject from '../../Assets/react.png';
 import mern from '../../Assets/mern.jpg';
 import { useHistory } from 'react-router-dom';
 

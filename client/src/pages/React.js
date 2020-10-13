@@ -12,7 +12,7 @@ import NavigationIcon from '@material-ui/icons/Navigation';
 import { useHistory } from 'react-router-dom';
 import Clicky from '../Assets/clicky.gif';
 import Emp from '../Assets/emp-directory.gif';
-import ReactImg from '../Assets/React.jpg'
+import ReactImg from '../Assets/react.png'
 
 const project1 = {
   title: 'Clicky Game',
