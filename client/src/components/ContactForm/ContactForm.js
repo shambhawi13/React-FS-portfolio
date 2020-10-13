@@ -37,6 +37,11 @@ function ContactForm(){
         console.log('postData',postData);
         API.sendEmail(postData).then((res)=>{
             console.log(res);
+            fNameRef.current.value = '';
+            lNameRef.current.value = '';
+            emailRef.current.value = '';
+            mobileRef.current.value = '';
+            subjectRef.current.val = '';
         })
     }
 
@@ -52,9 +57,8 @@ function ContactForm(){
                 <TextField required inputRef={lNameRef} id="lName" className="lName" label="Last Name" placeholder="Last Name" />
                 <TextField fullWidth inputRef={mobileRef} required id="mobile" label="Mobile Number" placeholder="+1(000)0000" />
                 <TextField fullWidth inputRef={emailRef} required id="email" label="Email" placeholder="some@some.com" />
-                <div>
+                {/* <div> */}
                     <TextField
-                        inputRef={subjectRef}
                         id="outlined-full-width"
                         label="Email content goes here"
                         fullWidth
@@ -62,9 +66,10 @@ function ContactForm(){
                         InputLabelProps={{
                             shrink: true,
                         }}
+                        inputRef={subjectRef}
                         variant="outlined"
                         />
-                </div>
+                {/* </div> */}
                 <Button variant="contained" 
                 color="primary"
                 endIcon={<Icon>send</Icon>}
