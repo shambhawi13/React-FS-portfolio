@@ -4,7 +4,7 @@ import profile from "../Assets/profile.jpg"
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import "../App.css";
-import Paper from '@material-ui/core/Paper';
+// import Paper from '@material-ui/core/Paper';
 import BarChart from '../components/BarChart/BarChart';
 import Fab from '@material-ui/core/Fab';
 import GetAppIcon from '@material-ui/icons/GetApp';
@@ -50,7 +50,7 @@ const About = () => {
   }, [])
 
   return (
-    <div className={classes.root}>
+    <div className="pattern-bgc">
       <div>
         <img style= {{
           height:30 +'em',width:100 + '%',
@@ -76,8 +76,7 @@ const About = () => {
         <h2 style={{fontFamily: 'cursive'}}>Shambhawi Kumari</h2>
          <h3 style={{fontVariant: 'small-caps'}}> Full stack Engineer, passion for User Interface <br/> design and development </h3>
       </div>
-      <Paper>
-        <Container style={{backgroundColor: "white"}}>
+        <Container >
               <Grid container className="wrap" style={{backgroundColor: "white"}}>
                 <Grid item xs={12}>
                   <h1 className="header">Shambhawi Kumari</h1>
@@ -103,9 +102,8 @@ const About = () => {
                   </Grid>
               </Grid>
         </Container>
-      </Paper>
       <div>
-        <Container>
+        <Container >
           <h1 className="align-center font"> Selected Work</h1>
           <ul className="work-list">
             <li className="work-container">

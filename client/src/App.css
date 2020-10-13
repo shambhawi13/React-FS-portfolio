@@ -41,9 +41,13 @@
     text-align: center;
 }
 
+.pattern-bgc{
+    background: url(https://www.transparenttextures.com/patterns/crissxcross.png);
+}
+
 .font{
     font-family:Roboto, Helvetica, Arial, sans-serif;
-    margin-top: 1.5em;
+    padding-top: 1.5em;
 }
 
 .work-list{

@@ -4,7 +4,7 @@ import ContactForm from '../components/ContactForm/ContactForm';
 
 function Contact() {
   return (
-    <div>
+    <div className="pattern-bgc">
       <ContactForm></ContactForm>
       <SimpleTable></SimpleTable>    
     </div>

@@ -3,7 +3,7 @@ import TitlebarGridList from '../components/GridList/GridList';
 
 const Dashboard = props => {
   return (
-    <div>
+    <div className="pattern-bgc">
       <TitlebarGridList></TitlebarGridList>
     </div>
   );
